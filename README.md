@@ -8,7 +8,6 @@ This project is a JavaFX-based desktop application developed for managing stock 
 ## 📊 Technologies:
 - JavaFX (JFoenix)
 - Java
-- Processes
 - CSS
 - Jasper
 - Regex
