@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="1030.0" prefWidth="1920.0"
+            stylesheets="@style/AdminDashBord.css" xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="lk.ijse.StockManagement.controller.Admin.AdminDashBordFromController">
+    <children>
+        <ImageView fitHeight="700.0" fitWidth="1920.0" pickOnBounds="true">
+            <image>
+                <Image url="@assets/image/BGImage/bg.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="1882.0" onMouseClicked="#closeMouseClick"
+                   pickOnBounds="true" preserveRatio="true" styleClass="myImage">
+            <image>
+                <Image url="@assets/image/icon/close.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="37.0" fitWidth="40.0" layoutX="1839.0" onMouseClicked="#minimizMouseClick"
+                   pickOnBounds="true" preserveRatio="true" styleClass="myImage">
+            <image>
+                <Image url="@assets/image/icon/sub.png"/>
+            </image>
+        </ImageView>
+        <Text fx:id="txtHour" fill="#305464" layoutX="1675.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="time-text" text="07 "/>
+        <Text fx:id="txtMin" fill="#305464" layoutX="1681.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="time-text" text="55"/>
+        <Text fx:id="txtDate" fill="#305464" layoutX="1634.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="date-text" text="Tue, 8 November"/>
+        <JFXButton layoutX="43.0" layoutY="721.0" onAction="#ArticleOnAction" prefHeight="248.0" prefWidth="259.0"
+                   styleClass="custom-button" stylesheets="@style/AdminDashBord.css">
+            <graphic>
+                <GridPane prefHeight="227.0" prefWidth="243.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="98.6666259765625" minHeight="10.0" prefHeight="89.66668701171875"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="94.66668701171875" minHeight="10.0" prefHeight="41.33331298828125"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="96.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <ImageView fitHeight="64.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/image/icon/article.png"/>
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="50.0"/>
+                            </GridPane.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-text"
+                              text="Articles" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets left="70.0"/>
+                            </GridPane.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-description"
+                              text="Gestion Intelligente et Suivi des Articles et Consommables"
+                              wrappingWidth="192.82508850097656" GridPane.rowIndex="2"/>
+                    </children>
+                </GridPane>
+            </graphic>
+        </JFXButton>
+        <JFXButton layoutX="343.0" layoutY="720.0" onAction="#StorageOnAction" prefHeight="248.0" prefWidth="259.0"
+                   styleClass="custom-button" stylesheets="@style/AdminDashBord.css">
+            <graphic>
+                <GridPane prefHeight="227.0" prefWidth="243.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="98.6666259765625" minHeight="10.0" prefHeight="89.66668701171875"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="94.66668701171875" minHeight="10.0" prefHeight="41.33331298828125"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="96.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <ImageView fitHeight="64.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/image/icon/storage.png"/>
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="50.0"/>
+                            </GridPane.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-text" text="Locaux"
+                              GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets left="70.0"/>
+                            </GridPane.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-description"
+                              text="Gestion et Suivi des Locaux de Stockage" wrappingWidth="192.82508850097656"
+                              GridPane.rowIndex="2"/>
+                    </children>
+                </GridPane>
+            </graphic>
+        </JFXButton>
+
+        <JFXButton layoutX="643.0" layoutY="720.0" onAction="#SuppliersOnAction" prefHeight="248.0" prefWidth="259.0"
+                   styleClass="custom-button" stylesheets="@style/AdminDashBord.css">
+            <graphic>
+                <GridPane prefHeight="227.0" prefWidth="243.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="98.6666259765625" minHeight="10.0" prefHeight="89.66668701171875"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="94.66668701171875" minHeight="10.0" prefHeight="41.33331298828125"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="96.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <ImageView fitHeight="64.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/image/icon/suppliers.png"/>
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="50.0"/>
+                            </GridPane.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-text"
+                              text="Fournisseurs" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets left="70.0"/>
+                            </GridPane.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-description"
+                              text="Gestion des Fournisseurs" wrappingWidth="192.82508850097656" GridPane.rowIndex="2"/>
+                    </children>
+                </GridPane>
+            </graphic>
+        </JFXButton>
+
+
+        <JFXButton layoutX="943.0" layoutY="718.0" onAction="#ServiceOnAction" prefHeight="248.0" prefWidth="259.0"
+                   styleClass="custom-button" stylesheets="@style/AdminDashBord.css">
+            <graphic>
+                <GridPane prefHeight="227.0" prefWidth="243.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="98.6666259765625" minHeight="10.0" prefHeight="89.66668701171875"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="94.66668701171875" minHeight="10.0" prefHeight="41.33331298828125"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="96.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <ImageView fitHeight="64.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/image/icon/services.png"/>
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="50.0"/>
+                            </GridPane.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-text"
+                              text="Services" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets left="70.0"/>
+                            </GridPane.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-description"
+                              text="Gestion des Services Consommateurs de l'Établissement"
+                              wrappingWidth="192.82508850097656" GridPane.rowIndex="2"/>
+                    </children>
+                </GridPane>
+            </graphic>
+        </JFXButton>
+        <JFXButton layoutX="1243.0" layoutY="716.0" onAction="#CommandeOnAction" prefHeight="248.0" prefWidth="259.0"
+                   styleClass="custom-button" stylesheets="@style/AdminDashBord.css">
+            <graphic>
+                <GridPane prefHeight="227.0" prefWidth="243.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="98.6666259765625" minHeight="10.0" prefHeight="89.66668701171875"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="94.66668701171875" minHeight="10.0" prefHeight="41.33331298828125"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="96.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <ImageView fitHeight="64.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/image/icon/commandes.png"/>
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="50.0"/>
+                            </GridPane.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-text"
+                              text="Commandes" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets left="70.0"/>
+                            </GridPane.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-description"
+                              text="Gestion des Commandes Internes/Externes" wrappingWidth="192.82508850097656"
+                              GridPane.rowIndex="2"/>
+                    </children>
+                </GridPane>
+            </graphic>
+        </JFXButton>
+        <JFXButton layoutX="1543.0" layoutY="716.0" onAction="#InventoryOnAction" prefHeight="248.0" prefWidth="259.0"
+                   styleClass="custom-button" stylesheets="@style/AdminDashBord.css">
+            <graphic>
+                <GridPane prefHeight="227.0" prefWidth="243.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="98.6666259765625" minHeight="10.0" prefHeight="89.66668701171875"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="94.66668701171875" minHeight="10.0" prefHeight="41.33331298828125"
+                                        vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="96.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <ImageView fitHeight="64.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/image/icon/inventory.png"/>
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="50.0"/>
+                            </GridPane.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-text"
+                              text="Inventaire" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets left="70.0"/>
+                            </GridPane.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-description"
+                              text="Gestion de l’Inventaire et Suivi des Stocks Annuels"
+                              wrappingWidth="192.82508850097656" GridPane.rowIndex="2"/>
+                    </children>
+                </GridPane>
+            </graphic>
+        </JFXButton>
+        <Text fill="BLACK" layoutX="48.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="notification-text" text="Admin"/>
+        <Circle fill="#1fff35" layoutX="31.0" layoutY="34.0" radius="9.0" stroke="#12f81e" strokeType="INSIDE"/>
+        <Text fx:id="txtAdminFistName" fill="BLACK" layoutX="131.0" layoutY="44.0" strokeType="OUTSIDE"
+              strokeWidth="0.0" styleClass="name-text" text="Yassin"/>
+        <Text fx:id="txtAdminLastName" fill="BLACK" layoutX="194.0" layoutY="44.0" strokeType="OUTSIDE"
+              strokeWidth="0.0" styleClass="name-text" text="Medhioub"/>
+        <ImageView fitHeight="54.0" fitWidth="87.0" layoutX="1843.0" layoutY="944.0" onMouseClicked="#logoutMouseClick"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/image/icon/shutdown.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

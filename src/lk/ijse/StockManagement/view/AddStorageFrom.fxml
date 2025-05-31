@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="635.0" prefWidth="460.0"
+            style="-fx-background-color: #34393F;" xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="lk.ijse.StockManagement.controller.Admin.AddStorageFromController">
+    <children>
+        <ImageView fitHeight="741.0" fitWidth="460.0" opacity="0.17" pickOnBounds="true">
+            <image>
+                <Image url="@assets/image/BGImage/add%20Employee.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="368.0" fitWidth="202.0" layoutX="258.0" layoutY="387.0" opacity="0.1" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@assets/image/icon/strg.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="58.0" fitWidth="83.0" layoutX="206.0" layoutY="23.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@assets/image/icon/storage.png"/>
+            </image>
+        </ImageView>
+        <JFXTextField fx:id="txtName" alignment="CENTER" layoutX="40.0" layoutY="130.0" prefHeight="25.0"
+                      prefWidth="390.0" promptText="Name" styleClass="add-employee-text"
+                      stylesheets="@style/EmployeeDashBord.css"/>
+        <Label text="Type: " layoutX="40.0" layoutY="230.0" styleClass="add-employee-label"
+               stylesheets="@style/EmployeeDashBord.css"/>
+
+        <ComboBox fx:id="comboType" layoutX="220.0" layoutY="230.0" prefWidth="200"/>
+        <JFXTextField fx:id="txtDescription" alignment="CENTER" layoutX="40.0" layoutY="330.0" prefHeight="25.0"
+                      prefWidth="390.0" promptText="Description" styleClass="add-employee-text"
+                      stylesheets="@style/EmployeeDashBord.css"/>
+        <JFXButton fx:id="btnAdd" layoutX="69.0" layoutY="674.0" onAction="#addOnAction" prefHeight="37.0"
+                   prefWidth="320.0" styleClass="add-employee-button" stylesheets="@style/EmployeeDashBord.css"
+                   text="Add"/>
+
+        <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="426.0" layoutY="11.0" onMouseClicked="#close"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/image/icon/icons8-close-window-64.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

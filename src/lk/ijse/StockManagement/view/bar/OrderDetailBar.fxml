@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="rootPane" prefHeight="78.0" prefWidth="1880.0" styleClass="bar"
+            stylesheets="@../style/bar.css" xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="lk.ijse.StockManagement.controller.Admin.bar.OrderDetailBar">
+    <children>
+        <Text fx:id="txtOrderID" fill="WHITE" layoutX="100.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="text-detail" text="" wrappingWidth="217.88037109375"/>
+        <Text fx:id="txtArticle" fill="WHITE" layoutX="340.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="text-detail" text="" wrappingWidth="376.2109375"/>
+        <Text fx:id="txtService" fill="WHITE" layoutX="580.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="text-detail" text="" wrappingWidth="196.23193359375"/>
+        <Text fx:id="txtQuantity" fill="WHITE" layoutX="820.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="text-detail" text="" wrappingWidth="196.2319325953722"/>
+        <Text fx:id="txtStorage" fill="WHITE" layoutX="1060.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="text-detail" text="" wrappingWidth="196.2319325953722"/>
+        <Text fx:id="txtDate" fill="WHITE" layoutX="1300.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="text-detail" text="" wrappingWidth="196.2319325953722"/>
+        <ImageView fitHeight="39.0" fitWidth="35.0" layoutX="1750.0" layoutY="23.0"
+                   onMouseClicked="#viewDataOnMouseClick" pickOnBounds="true" preserveRatio="true" styleClass="bar-btn">
+            <image>
+                <Image url="@../assets/image/icon/icons8-about-48%20(1).png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

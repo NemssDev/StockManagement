@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="620.0" prefWidth="460.0"
+            style="-fx-background-color: #34393F;" stylesheets="@style/EmployeeDashBord.css"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="lk.ijse.StockManagement.controller.Admin.ViewArticleDetailsFromController">
+    <children>
+        <ImageView fitHeight="635.0" fitWidth="460.0" layoutX="-2.0" opacity="0.17" pickOnBounds="true">
+            <image>
+                <Image url="@assets/image/BGImage/add%20Employee.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="368.0" fitWidth="202.0" layoutX="258.0" layoutY="286.0" opacity="0.16" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@assets/image/icon/article.png"/>
+            </image>
+        </ImageView>
+        <JFXButton layoutX="69.0" layoutY="610.0" onAction="#closeOnAction" prefHeight="37.0" prefWidth="320.0"
+                   styleClass="add-employee-button" stylesheets="@style/EmployeeDashBord.css" text="Close"/>
+        <ImageView fitHeight="100.0" fitWidth="83.0" layoutX="206.0" layoutY="23.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@assets/image/icon/article.png"/>
+            </image>
+        </ImageView>
+
+        <Text fill="WHITE" layoutX="40.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text-2" text="Reference :"/>
+        <Text fx:id="txtRef" fill="WHITE" layoutX="70.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text" text="" textAlignment="CENTER" wrappingWidth="179.9999939277768"/>
+
+        <Text fill="WHITE" layoutX="40.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text-2" text="Name :"/>
+        <Text fx:id="txtName" fill="WHITE" layoutX="80.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text" text="" textAlignment="CENTER" wrappingWidth="179.9999939277768"/>
+
+        <Text fill="WHITE" layoutX="40.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text-2" text="Category :"/>
+        <Text fx:id="txtCategory" fill="WHITE" layoutX="70.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text" text="" textAlignment="CENTER" wrappingWidth="179.9999939277768"/>
+
+        <Text fill="WHITE" layoutX="40.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text-2" text="Is Consommable :"/>
+        <Text fx:id="isCon" fill="WHITE" layoutX="110.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text" text="" textAlignment="CENTER" wrappingWidth="179.9999939277768"/>
+
+        <Text fill="WHITE" layoutX="40.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text-2" text="Expiration Date:"/>
+        <Text fx:id="txtExpir" fill="WHITE" layoutX="120.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text" text="" textAlignment="CENTER" wrappingWidth="179.9999939277768"/>
+
+        <Text fill="WHITE" layoutX="40.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text-2" text="Quantity :"/>
+        <Text fx:id="txtQtt" fill="WHITE" layoutX="50.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text" text="" textAlignment="CENTER" wrappingWidth="179.9999939277768"/>
+
+        <Text fill="WHITE" layoutX="40.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text-2" text="Min Stock :"/>
+        <Text fx:id="txtMinStck" fill="WHITE" layoutX="50.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text" text="" textAlignment="CENTER" wrappingWidth="179.9999939277768"/>
+
+        <Text fill="WHITE" layoutX="40.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text-2" text="Designation :"/>
+        <Text fx:id="txtDes" fill="WHITE" layoutX="120.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text" text="" textAlignment="CENTER" wrappingWidth="179.9999939277768"/>
+
+        <Text fill="WHITE" layoutX="40.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text-2" text="Price:"/>
+        <Text fx:id="txtPrix" fill="WHITE" layoutX="20.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text" text="" textAlignment="CENTER" wrappingWidth="179.9999939277768"/>
+
+        <Text fill="WHITE" layoutX="40.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text-2" text="Is Active :"/>
+        <Text fx:id="txtIsAct" fill="WHITE" layoutX="50.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="view-employee-details-text" text="" textAlignment="CENTER" wrappingWidth="179.9999939277768"/>
+        <JFXButton fx:id="btnDelete" layoutX="300.0" layoutY="550.0" onAction="#deleteOnAction" prefHeight="10.0"
+                   prefWidth="123.0" styleClass="bar-btn" stylesheets="@style/bar.css">
+            <graphic>
+                <GridPane prefHeight="30.0" prefWidth="107.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="37.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="70.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="btn-txt" text="Delete"
+                              GridPane.columnIndex="1"/>
+                        <ImageView fitHeight="33.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/image/icon/icons8-remove-24.png"/>
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="10.0"/>
+                            </GridPane.margin>
+                        </ImageView>
+                    </children>
+                </GridPane>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="btnUpdate" layoutX="300.0" layoutY="500.0" onAction="#UpdateOnAction" prefHeight="10.0"
+                   prefWidth="123.0" styleClass="bar-btn" stylesheets="@style/bar.css">
+            <graphic>
+                <GridPane prefHeight="30.0" prefWidth="107.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="37.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="70.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="btn-txt" text="Update"
+                              GridPane.columnIndex="1"/>
+                        <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/image/icon/icons8-update-24.png"/>
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="10.0"/>
+                            </GridPane.margin>
+                        </ImageView>
+                    </children>
+                </GridPane>
+            </graphic>
+        </JFXButton>
+    </children>
+</AnchorPane>

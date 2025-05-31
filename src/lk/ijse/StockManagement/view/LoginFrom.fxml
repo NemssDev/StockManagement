@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="480.0" prefWidth="840.0" styleClass="set-Bg-image"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="lk.ijse.StockManagement.controller.LoginFromController">
+    <children>
+
+        <ImageView fitHeight="480.0" fitWidth="840.0" pickOnBounds="true">
+            <image>
+                <Image url="@assets/image/BGImage/isimm.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="800.0" onMouseClicked="#closeMouseClick"
+                   pickOnBounds="true" preserveRatio="true" styleClass="myImage">
+            <image>
+                <Image url="@assets/image/icon/close.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="37.0" fitWidth="40.0" layoutX="760.0" onMouseClicked="#minimizMouseClick"
+                   pickOnBounds="true" preserveRatio="true" styleClass="myImage">
+            <image>
+                <Image url="@assets/image/icon/sub.png"/>
+            </image>
+        </ImageView>
+        <Rectangle layoutX="570.0" layoutY="0.0" width="300.0" height="480.0" mouseTransparent="true"
+
+                   fill="black" opacity="0.5"/>
+
+        <Text fill="WHITE" layoutX="650.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              style="-fx-font-weight: bold; -fx-font-size: 25;" text="LOGIN"/>
+        <JFXButton fx:id="btn" buttonType="RAISED" layoutX="580.0" layoutY="352.0" onAction="#loginOnAction"
+                   prefHeight="44.0" prefWidth="230.0" ripplerFill="WHITE" stylesheets="@style/Login.css" text="LOGIN"/>
+        <JFXTextField fx:id="txtUserName" alignment="CENTER" layoutX="580.0" layoutY="208.0" onAction="#user"
+                      prefHeight="29.0" prefWidth="230.0" promptText="User Name" stylesheets="@style/Login.css"/>
+        <JFXPasswordField fx:id="txtPassword" alignment="CENTER" layoutX="580.0" layoutY="281.0" onAction="#password"
+                          prefHeight="29.0" prefWidth="230.0" promptText="Password" stylesheets="@style/Login.css"/>
+    </children>
+</AnchorPane>

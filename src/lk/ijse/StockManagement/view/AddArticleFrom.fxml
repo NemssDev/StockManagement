@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="635.0" prefWidth="460.0"
+            style="-fx-background-color: #34393F;" xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="lk.ijse.StockManagement.controller.Admin.AddArticleFromController">
+    <children>
+        <ImageView fitHeight="741.0" fitWidth="460.0" opacity="0.17" pickOnBounds="true">
+            <image>
+                <Image url="@assets/image/BGImage/add%20Employee.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="368.0" fitWidth="202.0" layoutX="258.0" layoutY="387.0" opacity="0.1" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@assets/image/icon/article.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="58.0" fitWidth="83.0" layoutX="206.0" layoutY="23.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@assets/image/icon/article.png"/>
+            </image>
+        </ImageView>
+        <JFXTextField fx:id="txtName" alignment="CENTER" layoutX="40.0" layoutY="100.0" prefHeight="25.0"
+                      prefWidth="187.0" promptText="Name" styleClass="add-employee-text"
+                      stylesheets="@style/EmployeeDashBord.css"/>
+        <JFXTextField fx:id="txtDes" alignment="CENTER" layoutX="240.0" layoutY="100.0" prefHeight="25.0"
+                      prefWidth="187.0" promptText="Designation" styleClass="add-employee-text"
+                      stylesheets="@style/EmployeeDashBord.css"/>
+        <JFXDatePicker fx:id="txtExpir" defaultColor="#fba23e" layoutX="40.0" layoutY="170.0"
+                       onAction="#getDateOnAction" prefHeight="25.0" prefWidth="390.0" promptText="Expiration Date"
+                       styleClass="add-employee-text" stylesheets="@style/EmployeeDashBord.css"/>
+        <JFXTextField fx:id="txtMinStck" alignment="CENTER" layoutX="40.0" layoutY="226.0" onKeyReleased="#MinStkReg"
+                      prefHeight="25.0" prefWidth="180.0" promptText="Min Stock" styleClass="add-employee-text"
+                      stylesheets="@style/EmployeeDashBord.css"/>
+        <JFXTextField fx:id="txtQtt" alignment="CENTER" layoutX="246.0" layoutY="226.0" onKeyReleased="#QttReg"
+                      prefHeight="25.0" prefWidth="180.0" promptText="Quantity" styleClass="add-employee-text"
+                      stylesheets="@style/EmployeeDashBord.css"/>
+        <JFXTextField fx:id="txtPrice" alignment="CENTER" layoutX="40.0" layoutY="296.0" onKeyReleased="#PriceReg"
+                      prefHeight="25.0" prefWidth="390.0" promptText="Price" styleClass="add-employee-text"
+                      stylesheets="@style/EmployeeDashBord.css"/>
+        <Label text="Type: " layoutX="40.0" layoutY="426.0" styleClass="add-employee-label"
+               stylesheets="@style/EmployeeDashBord.css"/>
+        <ComboBox fx:id="comboType" layoutX="220.0" layoutY="356.0" prefWidth="200"/>
+        <Label text="Is Consommable: " layoutX="40.0" layoutY="356.0" styleClass="add-employee-label"
+               stylesheets="@style/EmployeeDashBord.css"/>
+        <ComboBox fx:id="comboCategorie" layoutX="220.0" layoutY="426.0" prefWidth="200"/>
+        <Label text="Storage: " layoutX="40.0" layoutY="496.0" styleClass="add-employee-label"
+               stylesheets="@style/EmployeeDashBord.css"/>
+        <ComboBox fx:id="comboStorage" layoutX="220.0" layoutY="496.0" prefWidth="200" onAction="#storageOnAction"/>
+
+        <JFXTextField fx:id="txtQta" alignment="CENTER" layoutX="40.0" layoutY="566.0" prefHeight="25.0"
+                      prefWidth="390.0" promptText="Quantity to add to storage" styleClass="add-employee-text"
+                      stylesheets="@style/EmployeeDashBord.css" onKeyReleased="#QtaReg" disable="true"/>
+
+        <Label text="Is Active:" layoutX="40.0" layoutY="626.0" styleClass="add-employee-label"
+               stylesheets="@style/EmployeeDashBord.css"/>
+        <CheckBox fx:id="isAct" alignment="CENTER" layoutX="180.0" layoutY="626.0" prefHeight="25.0" prefWidth="215.0"
+                  stylesheets="@style/EmployeeDashBord.css"/>
+
+        <JFXButton fx:id="btnAdd" layoutX="69.0" layoutY="674.0" onAction="#addOnAction" prefHeight="37.0"
+                   prefWidth="320.0" styleClass="add-employee-button" stylesheets="@style/EmployeeDashBord.css"
+                   text="Add"/>
+        <JFXTextField fx:id="txtUserName" alignment="CENTER" layoutX="40.0" layoutY="557.0" onKeyReleased="#userName"
+                      prefHeight="25.0" prefWidth="215.0" promptText="User Name" styleClass="add-employee-text"
+                      stylesheets="@style/EmployeeDashBord.css"/>
+        <JFXTextField fx:id="txtPassword" alignment="CENTER" layoutX="40.0" layoutY="615.0" onKeyReleased="#password"
+                      prefHeight="25.0" prefWidth="215.0" promptText="Password" styleClass="add-employee-text"
+                      stylesheets="@style/EmployeeDashBord.css"/>
+        <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="426.0" layoutY="11.0" onMouseClicked="#close"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/image/icon/icons8-close-window-64.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
