@@ -33,15 +33,17 @@ A **desktop application** designed for efficient inventory tracking and order ma
 
 🧰 Entities
 
+![Product Management](screenshots/capLogin.png)
+
 ![Product Management](screenshots/capArticle.png)
 
 ![Product Management](screenshots/image.png)
 
-![Product Management](screenshots/capStorage.png)
+![Product Management](screenshots/capSupplier.png)
 
 ![Product Management](screenshots/capServices.png)
 
-![Product Management](screenshots/capOrders.png)
+![Product Management](screenshots/capOrder.png)
 
 ![Product Management](screenshots/capInventory.png)
 
