@@ -45,11 +45,7 @@ A **desktop application** designed for efficient inventory tracking and order ma
 
 ![Product Management](screenshots/capInventory.png)
 
-### 📦 Product Management  
-![Product Management](screenshots/product-management.png)
 
-### 📑 Supplier & Order Overview  
-![Supplier and Orders](screenshots/supplier-orders.png)
 
 ---
 
