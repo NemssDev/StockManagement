@@ -35,7 +35,7 @@ A **desktop application** designed for efficient inventory tracking and order ma
 
 ![Product Management](screenshots/capArticle.png)
 
-![Product Management](screenshots/capSupplier.png)
+![Product Management](screenshots/image.png)
 
 ![Product Management](screenshots/capStorage.png)
 
