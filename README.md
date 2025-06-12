@@ -27,7 +27,23 @@ A **desktop application** designed for efficient inventory tracking and order ma
 
 ## 🖼️ Screenshots
 
+🏠 Main Interface
+
 ![Product Management](screenshots/capMain.png)
+
+🧰 Entities
+
+![Product Management](screenshots/capArticle.png)
+
+![Product Management](screenshots/capSupplier.png)
+
+![Product Management](screenshots/capStorage.png)
+
+![Product Management](screenshots/capServices.png)
+
+![Product Management](screenshots/capOrders.png)
+
+![Product Management](screenshots/capInventory.png)
 
 ### 📦 Product Management  
 ![Product Management](screenshots/product-management.png)
