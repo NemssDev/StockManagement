@@ -27,7 +27,7 @@ A **desktop application** designed for efficient inventory tracking and order ma
 
 ## 🖼️ Screenshots
 
-![Product Management](screenshots/Capture d'écran 2025-06-12 173816.png)
+![Product Management](screenshots/capMain.png)
 
 ### 📦 Product Management  
 ![Product Management](screenshots/product-management.png)
