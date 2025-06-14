@@ -54,7 +54,7 @@ A **desktop application** designed for efficient inventory tracking and order ma
 ## 🎥 Demo Video
 
 🎬 *Watch how the app works in real-time*  
-👉 [Watch the video](https://www.linkedin.com/posts/yassin-medhioub-6a05aa212_javafx-inventorymanagement-studentproject-activity-7338971652392636416-Wfsj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADXWTVgBrSW5LkeqY476dil9ccfS6_2mAtQ)
+👉 [Watch the video](https://www.linkedin.com/posts/yassin-medhioub_javafx-inventorymanagement-studentproject-activity-7338971652392636416-zVCo?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADXWTVgBrSW5LkeqY476dil9ccfS6_2mAtQ)
 
 
 ## 💼 Technical Details
